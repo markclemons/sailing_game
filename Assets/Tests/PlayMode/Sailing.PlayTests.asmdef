@@ -1,0 +1,19 @@
+{
+    "name": "Sailing.PlayTests",
+    "rootNamespace": "Sailing.Tests",
+    "references": [
+        "Sailing.Game"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,23 @@
+{
+    "name": "Sailing.Tests",
+    "rootNamespace": "Sailing.Tests",
+    "references": [
+        "Sailing.Game",
+        "Sailing.Editor",
+        "Unity.InputSystem"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

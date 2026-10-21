@@ -1,0 +1,34 @@
+Caribbean Sail art notes
+========================
+
+Water, the block hull, and the islands in the first slice are Unity primitives
+and our own URP shaders. They are placeholders so the game can be played before
+any modeled props exist.
+
+Blender MCP (not a runtime dependency)
+--------------------------------------
+Cursor uses the official Blender Lab server, not a third-party addon.
+Setup matches https://www.blender.org/lab/mcp-server/ and
+https://projects.blender.org/lab/blender_mcp/wiki/Setup
+
+- Blender 5.2, addon `bl_ext.lab.mcp` enabled, auto-start on localhost:9876
+- Server checkout: ~/blender_mcp
+- Cursor config: .cursor/mcp.json runs `uv --directory ~/blender_mcp/mcp run blender-mcp`
+
+Blender has to be open so the addon is listening. In Preferences, System,
+Allow Online Access must stay on or the addon will not open its socket.
+Then reload MCP servers in Cursor.
+
+When Blender is open with the addon connected, generate props only:
+palms, rocks, crates, a cannon, and the NPC hull silhouette.
+Export glTF into this folder (Assets/Art) and point the scene at those meshes.
+Do not generate the ocean or the block cubes here. The ocean is the Gerstner
+field in Assets/Scripts/Water, and the hull is the ship grid.
+
+Sources, in order:
+1. Modeled in Blender (ours).
+2. Poly Haven (CC0) and Poly Pizza (keep the author's credit in this file).
+3. AI generators (Meshy, Tripo, Rodin, Hunyuan) only if the mesh is cleaned up
+   and the commercial license is confirmed before shipping.
+
+Nothing from those libraries is imported yet, so there is nothing to credit.
